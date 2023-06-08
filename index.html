@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suitmedia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="companyimg">Company</a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">ABOUT</a>
+                    <ul>
+                        <li><a href="#">HISTORY</a></li>
+                        <li><a href="#">VISION MISSION</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">OUR WORK</a></li>
+                <li><a href="#">OUR TEAM</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <nav class="slide-package">
+
+        <nav class="slide">
+            <img src="./image/bg.jpg" class="show">
+            <img src="./image/about-bg.jpg">
+        </nav>
+
+        <nav class="button">
+            <span class="next">&#10095;</span>
+            <span class="previous">&#10094;</span>
+        </nav>
+
+        <nav class="circle-package">
+            <nav class="circle-btn active" attr="0"></nav>
+            <nav class="circle-btn" attr="1"></nav>
+        </nav>
+
+        <script type="text/javascript">
+            let slideImg = document.querySelectorAll('img');
+            let next = document.querySelector('.next');
+            let previous = document.querySelector('.previous');
+            let circle = document.querySelectorAll('.circle-btn');
+
+            var counter = 0;
+            next.addEventListener('click', slideNext)
+            function slideNext() {
+                slideImg[counter].style.animation = 'next1 0.4s ease-in forwards';
+                if(counter >= slideImages.length-1) {
+                    counter = 0;
+                }
+                else {
+                    counter++;
+                }
+                slideImg[counter].style.animation = 'next2 0.4s ease-in forwards';
+            }
+            
+        </script>
+
+    <nav class="package">
+
+        <h1 class="heading">OUR VALUES</h1>
+        <nav class="bar-package">
+            <nav class="bar1">
+                <img src="./image/lightbulb-o.png" alt="">
+                <h3>INNOVATIVE</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime exercitationem dolorem deserunt, unde, eaque ipsa?</p>
+            </nav>
+
+            <nav class="bar2">
+                <img src="./image/bank.png" alt="">
+                <h3>LOYALTY</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit similique eum itaque facere temporibus dolores.</p>
+            </nav>
+
+            <nav class="bar3">
+                <img src="./image/balance-scale.png" alt="">
+                <h3>RESPECT</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, sit? Tenetur et neque quod incidunt!</p>
+            </nav>
+        </nav>
+
+    </nav>
+
+    <nav>
+        <nav class="form">
+            <h1 class="heading">CONTACT US</h1>
+            <nav class="bar-form">
+                <nav class="bar">
+                    <form>
+                    <nav class="formBox">
+                        <nav class="row60">
+                            <nav class="insertBox">
+                                <span>Name</span>
+                                <input type="text">
+                            </nav>
+                        </nav>
+
+                        <nav class="row60">
+                            <nav class="insertBox">
+                                <span>Email</span>
+                                <input type="text">
+                            </nav>
+                        </nav>
+
+                        <nav class="row100">
+                            <nav class="insertBox">
+                                <span>Message</span>
+                                <textarea placeholder=""></textarea>
+                            </nav>
+                        </nav>
+
+                        <nav class="row100">
+                            <nav class="insertBox">
+                                <input type="submit" value="SUBMIT">
+                            </nav>
+                        </nav>
+
+                    </nav>
+                    </form>
+                </nav>
+            </nav>
+        </nav>
+    </nav>
+
+</body>
+</html>
